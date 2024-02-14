@@ -11,4 +11,8 @@ abstract class RepositoryModule {
   @dev
   @singleton
   ICounterRepository get devCounterRepository => DevCounterRepository();
+
+  @test
+  @singleton
+  ICounterRepository get testCounterRepository => MockCounterRepository();
 }
