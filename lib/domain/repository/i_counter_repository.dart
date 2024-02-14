@@ -1,3 +1,3 @@
-abstract class ICounterRepository{
+abstract class ICounterRepository {
   int get getIncrement;
 }

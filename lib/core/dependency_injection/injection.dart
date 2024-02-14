@@ -5,4 +5,4 @@ import 'injection.config.dart';
 final GetIt getIt = GetIt.instance;
 
 @injectableInit
-void configDependencies() => getIt.init();
+void configDependencies(String env) => getIt.init(environment: env);
